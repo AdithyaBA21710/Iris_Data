@@ -11,7 +11,7 @@ y = iris.target
 
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)
 
-model = DecisionTreeClassifier()
+model = DecisionTreeClassifier(random_state=42)
 model.fit(X_train, y_train)
 
 
